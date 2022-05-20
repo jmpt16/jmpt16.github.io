@@ -6,7 +6,7 @@
 	font-family: 'Perfect DOS VGA 437 Win';
   font-size: xxx-large;
 }
-body {
+html,body { height:calc(100% - 80px); 
   background-color: #0000ab;
 }
 
