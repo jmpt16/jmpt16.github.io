@@ -1,23 +1,13 @@
-@font-face {
-    font-family: 'Perfect DOS VGA 437';
-    src: url('Perfect DOS VGA 437.ttf') format('truetype');
-}
-* {
-	font-family: 'Perfect DOS VGA 437';
-  font-size: xx-large;
-}
-html,body { height:calc(100% - 80px);
-  background-color: #0000ab;
-}
 
-table {
-  border:3px solid white;
-  width:100%; margin:1px;
+html,body { 
+  background-color: #000069;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
   overflow: visible;
-  background-color: #0000ab;
+  background-color: #000069;
   box-shadow: 10px 10px rgba(0,0,0,0.5);
   font-size: inherit;
 }
@@ -54,7 +44,7 @@ table {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0000ab;
+  background-color: #000069;
   min-width: 160px;
   box-shadow: 10px 10px rgba(0,0,0,0.5);
   z-index: 1;
