@@ -1,99 +1,81 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
-
 header {
-    background: #003366; /* Dark blue */
+    background: #003366;
     color: #fff;
-    padding: 10px 0;
+    padding: 1rem 0;
     text-align: center;
 }
-
+header h1 {
+    margin: 0;
+}
+header p {
+    font-size: 1.2rem;
+}
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
-
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
-
-nav a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
 }
-
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 2rem;
 }
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.item {
-    margin: 10px;
-    text-align: center;
-    width: 40%;
-}
-
-.item img {
-    max-width: 100%;
-    height: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-}
-
-input, textarea {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-}
-
 .about-content {
     display: flex;
-    align-items: center; /* Vertically center the text and image */
-    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
-
 .about-text {
-    flex: 1; /* Allow text to take available space */
-    margin-right: 20px; /* Space between text and image */
+    flex: 1;
 }
-
 .about-image img {
-    max-width: 300px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners for the image */
+    max-width: 400px;
+    border-radius: 50%;
+}
+.tools {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.gallery .item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gallery .item p {
+    margin: 0.5rem 0;
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
